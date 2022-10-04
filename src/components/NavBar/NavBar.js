@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
   return (
@@ -19,20 +20,14 @@ const NavBar = () => {
           <li className="nav-item">
             <a className="nav-link" href="some">Veterinario</a>
           </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="some" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              PetShop
-            </a>
-            <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="some">Perros</a></li>
-              <li><a className="dropdown-item" href="some">Gato</a></li>
-              <li><a className="dropdown-item" href="some">exoticos</a></li>
-            </ul>
+          <li className="nav-item">
+            <a className="nav-link" href="some" role="button">PetShop</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+      <CartWidget/>
+   </nav>
   )
 }
 
